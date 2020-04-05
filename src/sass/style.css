@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  color: #15354B;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header .container {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+header .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container nav .logo p {
+  font-size: 22px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+header .container nav .nav-links {
+  margin-left: auto;
+}
+
+header .container nav .nav-links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container nav .nav-links ul li {
+  margin-right: 40px;
+}
+
+header .container nav .nav-links ul li a {
+  font-size: 16px;
+  line-height: 36px;
+  color: #506270;
+  text-decoration: none;
+}
+
+header .container nav .nav-links ul li a:after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #15354B;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+header .container nav .nav-links ul li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+header .container nav .gt-button {
+  text-decoration: none;
+  color: white;
+  background-color: #EF7F65;
+  border-radius: 23px;
+  padding: 13px 40px;
+}
+
+header .container1 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container1 .banner .content {
+  width: 57%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container1 .banner .content h1 {
+  font-size: 60px;
+  line-height: 78px;
+  padding-bottom: 35px;
+  font-weight: 400;
+}
+
+header .container1 .banner .content p {
+  font-size: 20px;
+  line-height: 36px;
+  color: #506270;
+  padding-bottom: 60px;
+}
+
+header .container1 .banner .content a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: #506270;
+  padding: 16px 40px;
+  border-radius: 23px;
+  border: 1px solid #506270;
+}
+
+header .container1 .banner .katror {
+  width: 20%;
+}
+
+header .container1 .banner .katror img {
+  width: 100%;
+}
+
+header .container1 .girl {
+  width: 57%;
+  margin-left: 25%;
+  margin-top: -7%;
+}
+
+header .container1 .girl img {
+  width: 100%;
+}
+
+main #Feature {
+  position: relative;
+  margin-top: 150px;
+  background-color: #EFF8FF;
+}
+
+main #Feature .core {
+  position: absolute;
+  top: -25px;
+  left: 7%;
+}
+
+main #Feature .container .kartat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #Feature .container .kartat .karta {
+  padding: 100px 0;
+  margin-left: 52px;
+}
+
+main #Feature .container .kartat .karta img {
+  width: 23%;
+}
+
+main #Feature .container .kartat .karta h4 {
+  padding: 35px 0;
+  padding-bottom: 25px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+main #Feature .container .kartat .karta p {
+  font-size: 13px;
+  line-height: 32px;
+}
+
+main #Feature .container .kartat .karta:first-child {
+  margin-left: 0;
+}
+
+main #Create-Acc {
+  position: relative;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Create-Acc .content {
+  width: 480px;
+  margin-right: 0;
+}
+
+main #Create-Acc .content h3 {
+  font-size: 40px;
+  line-height: 78px;
+  font-weight: 400;
+}
+
+main #Create-Acc .content p {
+  font-size: 13px;
+  line-height: 34px;
+  color: #506270;
+}
+
+main #Create-Acc .form {
+  padding-top: 50px;
+}
+
+main #Create-Acc .form input {
+  color: #80E0DD;
+  background-color: rgba(128, 224, 221, 0.15);
+  border-radius: 8px;
+  border: none;
+  padding: 14px 82px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+main #Create-Acc .form input:focus {
+  outline: none;
+}
+
+main #Create-Acc .form input::-webkit-input-placeholder {
+  color: #80E0DD;
+  font-size: 15px;
+}
+
+main #Create-Acc .form input:-ms-input-placeholder {
+  color: #80E0DD;
+  font-size: 15px;
+}
+
+main #Create-Acc .form input::-ms-input-placeholder {
+  color: #80E0DD;
+  font-size: 15px;
+}
+
+main #Create-Acc .form input::placeholder {
+  color: #80E0DD;
+  font-size: 15px;
+}
+
+main #Create-Acc .form a {
+  text-decoration: none;
+  color: white;
+  background-color: #80E0DD;
+  border-radius: 8px;
+  padding: 14px 35px;
+  font-size: 15px;
+}
+
+main #Create-Acc .telefoni {
+  margin-left: 80px;
+}
+
+main #Create-Acc .telefoni img {
+  width: 100%;
+}
+
+main #Invite-Friend {
+  position: relative;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Invite-Friend .content {
+  margin-left: 80px;
+  width: 480px;
+  margin-right: 0;
+}
+
+main #Invite-Friend .content h3 {
+  font-size: 40px;
+  line-height: 78px;
+  font-weight: 400;
+}
+
+main #Invite-Friend .content p {
+  font-size: 13px;
+  line-height: 34px;
+  color: #506270;
+  margin-bottom: 50px;
+}
+
+main #Invite-Friend .content a {
+  text-decoration: none;
+  color: white;
+  background-color: #EF7F65;
+  border-radius: 8px;
+  padding: 14px 35px;
+  font-size: 15px;
+}
+
+main #Invite-Friend .telefoni img {
+  width: 100%;
+}
+
+main #Pricing {
+  width: 70%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+main #Pricing .content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+main #Pricing .content h4 {
+  font-size: 40px;
+  line-height: 78px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+main #Pricing .content p {
+  font-size: 16px;
+  line-height: 34px;
+  color: #506270;
+}
+
+main #Pricing .kartat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #Pricing .kartat .karta {
+  border-radius: 15px;
+  position: relative;
+  border: 1px solid rgba(80, 98, 112, 0.3);
+  width: 46%;
+}
+
+main #Pricing .kartat .karta .nalt {
+  border-bottom: 1px solid rgba(80, 98, 112, 0.3);
+  padding-bottom: 40px;
+}
+
+main #Pricing .kartat .karta .nalt .biciklla {
+  padding: 80px 60px;
+  padding-bottom: 30px;
+}
+
+main #Pricing .kartat .karta .nalt .shirit {
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+
+main #Pricing .kartat .karta .nalt h1 {
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main #Pricing .kartat .karta .nalt h1 span {
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  font-size: 20px;
+}
+
+main #Pricing .kartat .karta .nalt h1 p {
+  font-size: 24px;
+}
+
+main #Pricing .kartat .karta .posht {
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+main #Pricing .kartat .karta .posht p {
+  font-size: 18px;
+  line-height: 48px;
+  color: #506270;
+}
+
+main #Pricing .kartat .karta .posht .links {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+main #Pricing .kartat .karta .posht .links .sgn {
+  margin-right: 25px;
+  text-decoration: none;
+  padding: 12px 50px;
+  font-size: 16px;
+  color: white;
+  border-radius: 23px;
+  background-color: #80E0DD;
+  margin-top: 60px;
+}
+
+main #Pricing .kartat .karta .posht .links .try {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 36px;
+  color: #80E0DD;
+}
+
+main #Pricing .kartat .karta2 .posht .links .sgn {
+  background-color: #EF7F65;
+}
+
+main #Pricing .kartat .karta2 .posht .links .try {
+  color: #EF7F65;
+}
+
+main #download {
+  margin-top: 283px;
+  background-color: #EFF8FF;
+  position: relative;
+}
+
+main #download .container {
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #download .container div .content {
+  padding-top: 121px;
+  width: 580px;
+}
+
+main #download .container div .content h4 {
+  font-size: 40px;
+  line-height: 78px;
+  font-weight: 400;
+}
+
+main #download .container div .content p {
+  padding-top: 55px;
+  font-size: 13px;
+  line-height: 34px;
+  color: #506270;
+}
+
+main #download .container div .dwn {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 93px;
+}
+
+main #download .container div .dwn p {
+  font-size: 24px;
+  padding-right: 77px;
+}
+
+main #download .container div .dwn img {
+  padding-right: 29px;
+}
+
+main #download .container div .ajoqika {
+  position: absolute;
+  top: -20%;
+}
+/*# sourceMappingURL=style.css.map */
