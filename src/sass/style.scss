@@ -105,6 +105,7 @@ header{
            display: flex;
            .content{
                width: 43%;
+               min-width: 820px;
                margin: auto;
                text-align: center;
                align-items: center;
@@ -327,6 +328,7 @@ main{
         display: flex;
         align-items: center;
         
+        
         .content{
             margin-left: 75.5px;
             width: 608px;
@@ -385,7 +387,7 @@ main{
         }
         
         .telefoni{
-          
+          align-items: center;
             img{
                 width: 100%;
             }
@@ -811,4 +813,231 @@ footer{
         font-size: 16px;
         line-height: 32px;
     }
+}
+
+@media screen and (max-width: 1400px){
+    
+
+    #download{
+        margin-top: 283px;
+        background-color: #EFF8FF;
+        position: relative;
+        .container{
+            width: 90% !important;
+            margin: auto;
+            display: flex;
+                div{
+                    .content{
+                        padding-top: 121px;
+                        width: 460px !important;
+                       
+                       // margin-right: 0;
+                        h4{
+                            font-size: 60px;
+                            line-height: 78px;
+                            font-weight: 400;
+                        }
+                        p{
+                            padding-top: 55px;
+                            font-size: 16px;
+                            line-height: 34px;
+                            color: #506270;
+                        }
+                    }
+                    .dwn{
+                        margin-top: 70px;
+                        display: flex;
+                        padding-bottom: 93px;
+                        align-items: center;
+                        flex-direction: column;
+                        p{
+                            font-size: 28px;
+                            padding-right: 77px;
+                            padding-bottom: 20px;
+                        }
+                        img{
+                           transition: transform 0.5s;
+                            padding-right: 29px;
+                            padding-bottom: 20px;
+                        }
+                        img:hover{
+                            transform: scale(1.1);
+                        }
+                        
+                    }
+                
+                }
+                .ajoqika0{
+                    position: absolute;
+                    top: 10px !important;
+                    left: 50% !important;
+                    width: 413px !important;
+                    height: 830px !important;
+                    margin-left: 162px;
+                    .ajoqika{
+                       width: 100%; 
+                       height: 100%;
+                       
+                    }
+                }
+               
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    header{
+        .container1{
+          
+            .girl{
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    #Feature{
+        .container{
+            .kartat{
+                flex-direction: column;
+                align-items: center;
+                .karta{
+                    margin-left: 0 !important;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+
+    #Create-Acc{
+        .teksti-majtas{
+            .form{
+                padding-top: 20px !important;
+                display: flex;
+                flex-direction: column;
+                //align-items: left;
+                input{
+                    width: 250px;
+                    height: 45px;
+                    margin-bottom: 20px;
+                }
+                a{
+                    width: 160px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+    #Pricing{
+        .content{
+            width: 100% !important;
+        }
+        .kartat{
+            flex-direction: column;
+            align-items: center;
+            .karta2{
+               margin-top: 50px;
+               margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    header{
+        .container1{
+            width: 99%;
+            margin: auto;
+            align-items: center;
+            .banner{
+                .content{
+                    width: 100% !important;
+                    min-width: 500px !important;
+                    h1{
+                        font-size:  33px;
+                    }
+                    p{
+                        width: 70%;
+                        font-size: 14px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    #Create-Acc{
+        width: 90% !important;
+        margin: auto;
+        flex-direction: column;
+        .teksti-majtas{
+            width: 100% !important;
+            text-align: center;
+            .form{
+                align-items: center;
+            }
+        }
+        .telefoni{
+            margin-top: 170px;
+        }
+
+    }
+    #Invite-Friend{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px !important;
+        flex-direction: column-reverse;
+        .telefoni{
+            margin-top: 150px;
+        }
+        .content{
+            width: 100% !important;
+            margin-left: 0 !important;
+            text-align: center;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 760px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    header{
+ 
+        .container{
+           width: 100%;
+           margin: auto;
+           padding-bottom: 50px;
+           border-bottom: 1px solid rgba(128, 224, 221, 0.15);
+           margin-bottom: 30px;
+            nav{
+                flex-direction: column;
+               
+            }
+            .nav-links{
+                margin-left: 12%!important;
+                justify-content: center !important;
+                align-items: center !important;
+                ul{
+                    
+                   flex-direction: column ;
+                   align-items: center;
+                   li{
+                       margin-bottom: 10px;
+                   }
+                }
+            }
+            .gt-button{
+                margin-left: 7%;
+            }
+        }
+    }        
 }
