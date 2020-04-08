@@ -47,7 +47,7 @@ header{
                             display: block;
                             content: "";
                             
-                            border-bottom: 1px solid #15354B;
+                            border-bottom: 1px solid #EF7F65;
                             transform: scaleX(0);
                             transition: transform 250ms ease-in-out;
                             transform-origin: 100% 50%;
@@ -63,12 +63,39 @@ header{
             }
 
             .gt-button{
+                width: 170px;
+                height: 45px;
                 text-decoration: none;
+                text-align: center;
                 color: white;
                 background-color: #EF7F65;
                 border-radius: 23px;
                 padding: 13px 40px;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
             }
+            .gt-button:hover {
+                color: white;
+                //background-color: transparent;
+            }
+              
+            .gt-button:before {
+                content: "";
+                position: absolute;
+                background: #15354B;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 100%;
+                z-index: -1;
+                transition: top 0.09s ease-in;
+            }
+              
+              .gt-button:hover:before {
+                top: 0;
+               }
 
         }
     }
@@ -94,18 +121,44 @@ header{
                     padding-bottom: 60px;
                }
                a{
+                    width: 270px;
+                    height: 55px;
                    z-index: 222 !important;
                    text-align: center;
                     text-decoration: none;
                     font-size: 16px;
                     color: #506270;
-                    padding: 16px 40px ;
-                    border-radius: 23px;
+                    padding: 17px 69px ;
+                    border-radius: 30px;
                     border: 1px solid #506270;
-               }
-               a:hover{
-                   cursor: pointer;
-               }
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+    
+                }
+                a:hover {
+                    color: white;
+                    cursor: pointer;
+                    //background-color: transparent;
+                }
+                  
+                a:before {
+                    content: "";
+                    position: absolute;
+                    background: #15354B;
+                    border-radius: 30px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    z-index: -1;
+                    transition: top 0.09s ease-in;
+                }
+                  
+                a:hover:before {
+                    top: 0;
+                   }
+               
            }
            .katror{
                width: 28.5%;
@@ -224,9 +277,35 @@ main{
                     color: white;
                     background-color: #80E0DD;
                     border-radius: 8px;
-                    padding: 14px 35px;
+                    padding: 13.5px 32px;
                     font-size: 15px;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+    
                 }
+                a:hover {
+                    color: white;
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+                  
+                a:before {
+                    content: "";
+                    position: absolute;
+                    background: rgb(30, 112, 167);
+                    border-radius: 8px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    z-index: -1;
+                    transition: top 0.09s ease-in;
+                }
+                  
+                a:hover:before {
+                    top: 0;
+                   }
             }
 
             }
@@ -274,9 +353,35 @@ main{
                 color: white;
                 background-color: #EF7F65;
                 border-radius: 8px;
-                padding: 13px 32px;
+                padding: 13.5px 32px;
                 font-size: 15px;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
             }
+            a:hover {
+                color: white;
+                cursor: pointer;
+                background-color: transparent;
+            }
+              
+            a:before {
+                content: "";
+                position: absolute;
+                background: rgba(168, 18, 18, 0.993);
+                border-radius: 8px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 100%;
+                z-index: -1;
+                transition: top 0.08s ease-in;
+            }
+              
+            a:hover:before {
+                top: 0;
+               }
         }
         
         .telefoni{
@@ -373,13 +478,59 @@ main{
                                     border-radius: 23px;
                                     background-color: #80E0DD;
                                     margin-top: 60px;
+                                    position: relative;
+                                    overflow: hidden;
+                                    z-index: 1;
+                    
                                 }
+                                .sgn:hover {
+                                    color: white;
+                                    cursor: pointer;
+                                    background-color: transparent;
+                                }
+                                  
+                                .sgn:before {
+                                    content: "";
+                                    position: absolute;
+                                    background: rgb(30, 112, 167);
+                                    border-radius: 23px;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    top: 100%;
+                                    z-index: -1;
+                                    transition: top 0.09s ease-in;
+                                }
+                                  
+                                .sgn:hover:before {
+                                    top: 0;
+                                   }
                                 .try{
+                                    position: relative;
                                     text-decoration: none;
                                     font-size: 16px;
                                     line-height: 36px;
                                     color: #80E0DD;
                                 }
+                                .try:after {
+                                    position: absolute;
+                                    //top: 0;
+                                    left: 0;
+                                    display: block;
+                                    content: "";
+                                    width: 100%;
+                                    border-bottom: 1px solid #80E0DD;
+                                    transform: scaleX(0);
+                                    transition: transform 250ms ease-in-out;
+                                    transform-origin: 100% 50%;
+                                    
+                                    
+                                }
+                                .try:hover:after {
+                                    transform: scaleX(1);
+                                    transform-origin: 0 50%;
+                                }
+
                             }
                            
                         }
@@ -393,8 +544,14 @@ main{
                             .sgn{
                                 background-color: #EF7F65;
                             }
+                            .sgn:before{
+                                background: rgba(168, 18, 18, 0.993);
+                            }
                             .try{
                                 color: #EF7F65;
+                            }
+                            .try:after{
+                                border-bottom: 1px solid #EF7F65;
                             }
                         }
                     }
@@ -435,13 +592,17 @@ main{
                         margin-top: 70px;
                         display: flex;
                         padding-bottom: 93px;
+                        align-items: center;
                         p{
                             font-size: 28px;
                             padding-right: 77px;
                         }
                         img{
-                           
+                           transition: transform 0.5s;
                             padding-right: 29px;
+                        }
+                        img:hover{
+                            transform: scale(1.1);
                         }
                         
                     }
@@ -499,6 +660,33 @@ main{
                 border-radius: 30px;
                 background-color: #80E0DD;
                // margin-top: 60px;
+            
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
+            }
+            a:hover {
+                color: white;
+                cursor: pointer;
+                background-color: transparent;
+            }
+            
+            a:before {
+                content: "";
+                position: absolute;
+                background: rgb(30, 112, 167);
+                border-radius: 23px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 100%;
+                z-index: -1;
+                transition: top 0.09s ease-in;
+            }
+            
+            a:hover:before {
+                top: 0;
             }
 
         }
@@ -567,15 +755,29 @@ footer{
                     font-weight: 300;
                     padding-bottom: 40px;
                 }
-                p{
+                a{
+                    text-decoration: none;
                     font-size: 16px;
                     line-height: 40px;
                     
                     color: #506270;
                 }
-                p:hover{
-                    cursor: pointer;
+                a:after {
+                    display: block;
+                    content: "";
+                    width: 30%;
+                    border-bottom: 1px solid #EF7F65;
+                    transform: scaleX(0);
+                    transition: transform 250ms ease-in-out;
+                    transform-origin: 100% 50%;
+                    
+                    
                 }
+                a:hover:after {
+                    transform: scaleX(1);
+                    transform-origin: 0 50%;
+                }
+                
 
                 
             }
@@ -591,11 +793,13 @@ footer{
                 img{
                    align-items: center;
                     margin-left: 40px;
+                    transition: transform 0.5s;
                     //width: 25px;
                     //height: 30px;
                 }
                 img:hover{
                     cursor: pointer;
+                    transform: scale(1.5);
                 }
             }
 
