@@ -6,6 +6,7 @@
 body{
     font-family: Montserrat;
     color: #15354B;
+    overflow-x: hidden;
 }
 .container{
     width: 70%;
@@ -163,6 +164,7 @@ header{
            }
            .katror{
                width: 28.5%;
+              // min-width: 200px;
                img{
                    width: 100%;
                }
@@ -761,13 +763,14 @@ footer{
                     text-decoration: none;
                     font-size: 16px;
                     line-height: 40px;
-                    
                     color: #506270;
+                    position: relative;
                 }
                 a:after {
+                    position: absolute;
                     display: block;
                     content: "";
-                    width: 30%;
+                    width: 30px;
                     border-bottom: 1px solid #EF7F65;
                     transform: scaleX(0);
                     transition: transform 250ms ease-in-out;
@@ -850,10 +853,11 @@ footer{
                         padding-bottom: 93px;
                         align-items: center;
                         flex-direction: column;
+                        //justify-content: center;
                         p{
                             font-size: 28px;
-                            padding-right: 77px;
-                            padding-bottom: 20px;
+                            padding-right: 0 !important;
+                            padding-bottom: 30px;
                         }
                         img{
                            transition: transform 0.5s;
@@ -870,7 +874,7 @@ footer{
                 .ajoqika0{
                     position: absolute;
                     top: 10px !important;
-                    left: 50% !important;
+                    left: 40% !important;
                     width: 413px !important;
                     height: 830px !important;
                     margin-left: 162px;
@@ -883,6 +887,67 @@ footer{
                
         }
     }
+    footer{
+        .footer1{
+            position: relative;
+            .container{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .logo{
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+                .ul{
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        padding-bottom: 0;
+                    }
+                    a:after{
+                         position: absolute;
+                         width: 62px;
+                         top: 30px !important;
+                         left: 29% !important;
+                        
+                    }
+                  
+                   
+                }
+                .social-links{
+                    margin-left: 0;
+                    margin-top: 20px;
+                    a:first-child{
+                        margin-left: 0;
+                        img{
+                            margin-left: 0;
+                        }
+                    }
+                }
+                
+               
+            }
+
+            .katror1{
+                width: 300px !important;
+                position: absolute !important;
+                top: 0 !important;
+                left: 13% !important;
+                overflow: hidden;
+                
+            }
+            .katror2{
+                width: 300px !important;
+                position: absolute !important;
+                top: 0 !important;
+                left: 70% !important;
+                overflow: hidden;
+            }
+
+        }
+    }
 }
 
 
@@ -893,7 +958,18 @@ footer{
     }
     header{
         .container1{
-          
+                .banner{
+                    .katror{
+                        position: absolute;
+                        z-index: -1;
+                        min-width: 200px;
+                        opacity: 0.5;
+                    }
+                    .katror2{
+                        overflow: hidden;
+                        left: 70%;
+                    }
+                }
             .girl{
                 width: 100%;
                 margin: auto;
@@ -926,6 +1002,7 @@ footer{
                     width: 250px;
                     height: 45px;
                     margin-bottom: 20px;
+                    margin-right: 0 !important;
                 }
                 a{
                     width: 160px;
@@ -947,6 +1024,25 @@ footer{
             }
         }
     }
+
+    #download{
+        .container{
+            .ajoqika0{
+                position: absolute;
+                top: 100px !important;
+                left: 40% !important;
+                width: 313px !important;
+                height: 630px !important;
+                margin-left: 162px;
+                .ajoqika{
+                   width: 100%; 
+                   height: 100%;
+                   
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 900px){
@@ -955,12 +1051,23 @@ footer{
             width: 99%;
             margin: auto;
             align-items: center;
+           
             .banner{
+               
+                .katror{
+                    position: absolute;
+                    z-index: -1;
+                    min-width: 200px;
+                }
+                .katror2{
+                    overflow: hidden;
+                    left: 70%;
+                }
                 .content{
                     width: 100% !important;
                     min-width: 500px !important;
                     h1{
-                        font-size:  33px;
+                        font-size:  45px;
                     }
                     p{
                         width: 70%;
@@ -1002,6 +1109,45 @@ footer{
         }
         
     }
+    #download{
+        .container{
+            //flex-direction: column-reverse !important;
+            width: 100% !important;
+            margin: auto;
+            margin-top: 100px !important;
+            div{
+                .content{
+                    width: 90% !important;
+                    margin: auto !important;
+                    text-align: center;
+                   
+                  
+                }
+                .dwn{
+                    padding-bottom: 550px !important;
+                }
+            }
+            .ajoqika0{
+               
+                position: absolute;
+                top: 60% !important;
+                //left: 0%!important;
+                width: 313px !important;
+                height: 630px !important;
+                margin-left: 0 !important;
+                //margin: 0 30% !important;
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+                
+             
+                .ajoqika{
+                   width: 100%; 
+                   height: 100%;
+                   
+                }
+            }
+        }
+    }
 }
 
 
@@ -1039,5 +1185,53 @@ footer{
                 margin-left: 7%;
             }
         }
-    }        
+        .container1{
+            .banner{
+                .content{
+                    h1{
+                        font-size: 33px;
+                    }
+                }
+            }
+        }
+    } 
+    #Pricing{
+        width: 90% !important;
+        margin: auto !important;
+        .kartat{
+            .karta{
+                width: 100% !important;
+                
+            }
+        }
+    }
+    #download{
+        margin-top: 100px !important;
+        .container{
+            .dwn{
+                padding-bottom: 800px !important;
+            }
+            // .ajoqika0{
+            //     top: 60% !important;
+            //    margin: 0 25% !important;
+              
+            // }
+        }
+    } 
+    .sub{
+            margin-top: 150px !important;
+        .container{
+            width: 90%;
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+            .content{
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            a{
+                margin-left: 0 !important;
+            }
+        }
+    }      
 }
