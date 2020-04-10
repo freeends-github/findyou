@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -7,12 +9,17 @@ html {
 }
 
 header {
+  margin-top: 30px !important;
+  height: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .toggler {
@@ -22,9 +29,9 @@ header .toggler {
   height: 26px;
   padding: 0;
   display: none;
-  margin-top: 30px;
   position: absolute;
-  right: 7px;
+  right: 15px;
+  background: white;
   cursor: pointer;
 }
 
@@ -47,11 +54,12 @@ header div {
 
 header div img {
   height: 46px;
+  margin-right: 4px;
 }
 
 header ul {
   list-style: none;
-  width: 450px;
+  width: 549px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +69,8 @@ header ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 header ul li {
@@ -82,6 +92,10 @@ header ul li .start {
   color: white;
   background: #EF7F65;
   border-radius: 23px;
+}
+
+header ul li .start:hover {
+  background-color: #d86147;
 }
 
 header ul li a:hover {
@@ -123,8 +137,8 @@ h2 {
   position: absolute;
   right: 0;
   width: 100%;
-  top: 0;
-  height: 30%;
+  top: 97px;
+  z-index: -111;
 }
 
 .be-together div {
@@ -135,6 +149,7 @@ h2 {
 }
 
 .be-together div h1 {
+  margin-top: 185px;
   font-size: 60px;
   color: #15354B;
 }
@@ -142,6 +157,7 @@ h2 {
 .be-together div p {
   font-size: 18px;
   color: #506270;
+  margin-bottom: 63px;
 }
 
 .be-together div a {
@@ -151,7 +167,6 @@ h2 {
   border-radius: 28px;
   border: 1px #506270 solid;
   padding: 16px 78px;
-  margin-top: 50px;
   display: inline-block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -165,7 +180,8 @@ h2 {
 
 .be-together .div-foto {
   padding: 0;
-  margin-top: 50px;
+  margin-top: 89.4px;
+  width: 938.08px;
 }
 
 .be-together .foto {
@@ -177,17 +193,20 @@ h2 {
   position: relative;
   background-color: #EFF8FF;
   width: 100%;
-  margin: 200px 0;
+  margin: 176px 0;
+  margin-bottom: 200px;
 }
 
 .core-feature h4 {
   font-size: 28px;
   color: #15354B;
   line-height: 32px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .core-feature p {
-  width: 95%;
+  width: 100%;
 }
 
 .core-feature .feature-1 {
@@ -239,80 +258,87 @@ h2 {
 .core-feature img {
   position: absolute;
   top: -5%;
-  left: 12%;
+  left: 245px;
 }
 
 .core-feature > div {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 55px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .create-account > div {
+  margin-bottom: 200px !important;
   width: 65%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.create-account > div > div {
-  width: 50%;
+.create-account > div .image {
+  width: 579px;
+  margin-left: 80px;
 }
 
-.create-account > div img {
+.create-account > div .image img {
   width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.create-account > div img:hover {
+.create-account > div .image img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+.create-account > div .invite-f {
+  margin-left: 0;
+  margin-right: 76px;
+}
+
 .create-account .text {
-  width: 45%;
-  margin-bottom: 30px;
+  width: 570px;
+}
+
+.create-account .text h2 {
+  margin-top: 99px;
+  margin-bottom: 40px;
+}
+
+.create-account .text p {
+  margin-bottom: 50px;
 }
 
 .create-account input {
-  background: #80E0DD;
-  opacity: 0.15;
+  background: rgba(128, 224, 221, 0.15);
   border-radius: 8px;
   outline: none;
   padding: 14px 20px;
   border: none;
-  width: 40%;
+  width: 270px;
+  margin-bottom: 105px;
 }
 
 .create-account input::-webkit-input-placeholder {
-  color: white;
+  color: #80E0DD;
 }
 
 .create-account input:-ms-input-placeholder {
-  color: white;
+  color: #80E0DD;
 }
 
 .create-account input::-ms-input-placeholder {
-  color: white;
+  color: #80E0DD;
 }
 
 .create-account input::placeholder {
-  color: white;
+  color: #80E0DD;
 }
 
 .create-account button {
@@ -322,6 +348,8 @@ h2 {
   padding: 14px 35px;
   border-radius: 8px;
   cursor: pointer;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .create-account .blue-btn {
@@ -329,12 +357,20 @@ h2 {
   margin-left: 30px;
 }
 
+.create-account .blue-btn:hover {
+  background: #2aa09c;
+}
+
 .create-account .orange-btn {
   background: #EF7F65;
 }
 
+.create-account .orange-btn:hover {
+  background: #c4614a;
+}
+
 .pricing-plan > p {
-  width: 40%;
+  width: 770px;
   margin: auto;
   text-align: center;
 }
@@ -342,6 +378,7 @@ h2 {
 .pricing-plan h2 {
   text-align: center;
   margin-top: 190px;
+  margin-bottom: 30px;
 }
 
 .pricing-plan > div {
@@ -358,8 +395,8 @@ h2 {
   border: #0000001A 1px solid;
   border-radius: 15px;
   position: relative;
-  padding: 40px 60px;
-  width: 49%;
+  padding: 80px 60px;
+  width: 530px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -367,44 +404,59 @@ h2 {
 .pricing-plan .plan-item h4 {
   color: #15354B;
   font-size: 24px;
+  position: relative;
   margin: 0 -60px;
   margin-bottom: 40px;
   padding: 30px 0 40px 60px;
   border-bottom: #0000001A 1px solid !important;
 }
 
-.pricing-plan .plan-item h4 span {
+.pricing-plan .plan-item h4 .dollar-sign {
+  position: absolute;
+  top: 34px;
+  left: 48px;
+}
+
+.pricing-plan .plan-item h4 .price {
   font-size: 40px;
 }
 
-.pricing-plan .plan-item p {
-  width: 243px;
-}
-
 .pricing-plan button {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   color: white;
-  padding: 12px 40px;
+  padding: 12px 60px;
   border-radius: 28px;
   border: none;
   outline: none;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-right: 25px;
   cursor: pointer;
 }
 
 .pricing-plan h5 {
   font-size: 18px;
-  line-height: 25px;
+  line-height: 48px;
   color: #506270;
-  margin: 15px 0;
+  margin: 0;
+  font-weight: 55;
 }
 
 .pricing-plan .blue-btn {
   background: #80E0DD;
 }
 
+.pricing-plan .blue-btn:hover {
+  background: #2aa09c;
+}
+
 .pricing-plan .orange-btn {
   background: #EF7F65;
+}
+
+.pricing-plan .orange-btn:hover {
+  background: #c4614a;
 }
 
 .pricing-plan .blue {
@@ -424,44 +476,30 @@ h2 {
 .pricing-plan .vija {
   position: absolute;
   top: 0;
-  right: 10%;
+  right: 59px;
 }
 
 .download-app {
-  margin: 280px 0;
+  height: 664px;
+  margin-top: 283px;
+  margin-bottom: 257px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background: #EFF8FF;
 }
 
 .download-app .text {
-  width: 37%;
-  margin-left: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 19.5%;
+  margin-right: 164px;
 }
 
-.download-app .text img {
-  width: 20%;
+.download-app p {
+  width: 700px;
 }
 
 .download-app .img {
-  width: 35%;
-  margin-right: 10%;
-  margin-top: -5%;
-  margin-bottom: -5%;
+  width: 413px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,25 +513,45 @@ h2 {
 }
 
 .download-app h1 {
-  font-size: 55px;
+  font-size: 60px;
   line-height: 75px;
   color: #15354B;
+  margin-top: 121px;
+  width: 437px;
+  margin-bottom: 55px;
 }
 
 .download-app h4 {
   color: #15354B;
   font-size: 28px;
-  line-height: 30px;
+  line-height: 56px;
   display: inline-block;
-  margin-top: 70px;
-  margin-right: 10px;
-  margin-bottom: 133px;
-  width: 45%;
+  margin-right: 87px;
+  margin-bottom: 0;
+  margin-top: 0em;
+}
+
+.download-app p {
+  margin-bottom: 70px;
+}
+
+.download-app .download-app-now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .download-app a {
-  margin-right: 10px;
-  padding-top: -10px;
+  height: 40px;
+  margin-right: 30px;
+}
+
+.download-app a img {
+  height: 100%;
+  width: 135px !important;
 }
 
 .subscribe {
@@ -510,16 +568,18 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 50px;
 }
 
 .subscribe > div div {
-  width: 70%;
-  margin-bottom: 50px;
+  width: 818px;
 }
 
 .subscribe button {
   padding: 18px 80px;
   border-radius: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
   background: #80E0DD;
   color: white;
   border: none;
@@ -528,6 +588,21 @@ h2 {
   -webkit-box-shadow: 8px 8px 20px #80E0DD40;
           box-shadow: 8px 8px 20px #80E0DD40;
   cursor: pointer;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.subscribe button:hover {
+  background: #2aa09c;
+}
+
+.subscribe p {
+  margin-bottom: 0;
+}
+
+.subscribe h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .footer {
@@ -549,6 +624,7 @@ h2 {
   position: absolute;
   width: 100%;
   top: -20%;
+  z-index: -33333;
 }
 
 .footer .logo {
@@ -573,6 +649,15 @@ h2 {
 .footer h5 {
   font-size: 16px;
   color: #506270;
+}
+
+.footer h5 a {
+  text-decoration: none;
+  color: #506270;
+}
+
+.footer h5:hover a {
+  color: #EF7F65;
 }
 
 .footer .social-media {
@@ -608,14 +693,80 @@ h2 {
   color: #EF7F65 !important;
 }
 
+@media screen and (max-width: 1780px) {
+  .be-together div h1 {
+    margin-top: 100px;
+  }
+  .core-feature img {
+    left: 120px;
+  }
+  .create-account input {
+    width: 200px;
+  }
+  .pricing-plan .plan-item {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .container {
+    width: 75%;
+  }
+  .core-feature img {
+    left: 50px;
+  }
+  .download-app .text {
+    margin-left: 12.5%;
+    margin-right: 70px;
+  }
+  .create-account .text h2 {
+    margin-top: 70px;
+  }
+  .create-account input {
+    margin-bottom: 10px;
+  }
+  .create-account .blue-btn {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .create-account .text h2 {
+    margin-top: 0;
+  }
+  .be-together div h1 {
+    margin-top: 0;
+  }
+  .pricing-plan .plan-item {
+    padding: 40px 60px;
+    width: 350px;
+  }
+  .download-app .text {
+    width: 500px !important;
+  }
+  .download-app .text p {
+    width: 100%;
+  }
+  .download-app .download-app-now {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header ul {
     display: none;
     width: 200px;
     height: 300px;
     position: absolute;
-    top: 5%;
-    right: 0%;
+    top: 65px;
+    right: 15px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(yellow), to(green));
     background-image: linear-gradient(yellow, green);
     color: white;
@@ -640,8 +791,14 @@ h2 {
     background: white !important;
     color: green !important;
   }
+  header .start:hover a {
+    color: #154d15;
+  }
   .toggler {
     display: inline-block !important;
+  }
+  .be-together .div-foto {
+    width: 90%;
   }
   .be-together div {
     width: 50%;
@@ -658,9 +815,13 @@ h2 {
   }
   .create-account > div {
     width: 80%;
+    margin-bottom: 100px !important;
   }
   .create-account .blue-btn {
     margin: 0;
+  }
+  .pricing-plan h2 {
+    margin-top: 100px;
   }
   .pricing-plan .plan-item {
     padding: 20px 60px;
@@ -693,6 +854,15 @@ h2 {
   }
   .core-feature {
     margin: 100px 0;
+  }
+  .core-feature > div {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .core-feature > div h4 {
+    margin-bottom: 0;
   }
   .core-feature img {
     left: 0;
@@ -735,6 +905,13 @@ h2 {
     font-size: 30px;
     line-height: 36px;
   }
+  .create-account > div .image {
+    width: 90%;
+    margin-left: 0;
+  }
+  .create-account > div .image img {
+    width: 100%;
+  }
   .create-account input {
     width: 80%;
     display: block;
@@ -742,24 +919,54 @@ h2 {
   .create-account .blue-btn {
     margin-top: 15px;
   }
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    width: 90%;
-  }
-  .core-feature > img {
-    top: -2.3%;
-  }
-  .core-feature > div {
+  .download-app {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    height: 450px;
   }
-  .core-feature > div > div {
+  .download-app h1 {
     margin-top: 30px;
-    margin-left: 30px;
+  }
+  .download-app .img {
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    right: 2%;
+  }
+  .download-app .text {
+    width: 90% !important;
+  }
+  footer p {
+    padding-left: 5% !important;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .be-together div {
+    width: 90%;
+  }
+  .be-together div p {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .be-together div a {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  .container {
+    width: 90%;
+  }
+  .core-feature > div {
+    margin-right: 10px;
+  }
+  .core-feature > img {
+    top: -2.3%;
+    left: 70%;
   }
   .core-feature h4 {
     margin: 15px 0;
@@ -773,6 +980,9 @@ h2 {
     margin: auto;
   }
   .create-account > div > div {
+    width: 100%;
+  }
+  .create-account > div > div img {
     width: 100%;
   }
   .create-account > div .text {
@@ -798,7 +1008,15 @@ h2 {
     padding-bottom: 15px;
     margin-bottom: 10px;
     padding: 10px;
+    padding-left: 22px;
     margin: 0 -10px;
+  }
+  .pricing-plan .plan-item h4 .dollar-sign {
+    top: 15px;
+    left: 10px;
+  }
+  .pricing-plan .vija {
+    right: 10px;
   }
   .download-app {
     -webkit-box-orient: vertical;
@@ -806,23 +1024,35 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
+    margin-bottom: 80px;
+  }
+  .download-app h1 {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .download-app h4 {
+    width: 60%;
+    line-height: 24px;
+  }
+  .download-app .img {
+    width: 150px;
+    top: 50%;
   }
   .download-app .text {
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
   }
-  .download-app .img {
+  .download-app .text p {
     margin-bottom: 20px;
-    position: absolute;
-    bottom: -10%;
-    right: 0;
   }
   .subscribe > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 0px;
   }
   .subscribe > div > div {
     width: 100%;
