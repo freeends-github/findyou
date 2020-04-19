@@ -656,7 +656,7 @@ h2{
         color: white;
         z-index: 9999999999;
         border-radius: 5px;
-        opacity:.8;
+        opacity:1;
             // flex-direction: column;
             // justify-content: space-evenly;
             padding: 0em;
@@ -665,11 +665,15 @@ h2{
                 margin-bottom: 40px;
                 margin-top:40px;
                 text-align: center;
+                transition:  all 0.3s;
+                a{
+                border-bottom:none !important;
+                }
             }
-            li:hover{
-                border-bottom:none;
-            }
+            li:hover a{
+                color: #EF7F65 !important;
 
+            }
         }
 
         a{
