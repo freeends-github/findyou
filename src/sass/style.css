@@ -392,7 +392,7 @@ h2 {
 }
 
 .pricing-plan .plan-item {
-  border: #0000001A 1px solid;
+  border: rgba(0, 0, 0, 0.1) 1px solid;
   border-radius: 15px;
   position: relative;
   padding: 80px 60px;
@@ -408,7 +408,7 @@ h2 {
   margin: 0 -60px;
   margin-bottom: 40px;
   padding: 30px 0 40px 60px;
-  border-bottom: #0000001A 1px solid !important;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid !important;
 }
 
 .pricing-plan .plan-item h4 .dollar-sign {
@@ -680,7 +680,7 @@ h2 {
 }
 
 .footer p {
-  border-top: #0000001A 1px solid;
+  border-top: rgba(0, 0, 0, 0.1) 1px solid;
   padding-left: 20%;
   padding-top: 30px;
 }
